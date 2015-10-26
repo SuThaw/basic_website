@@ -2,17 +2,32 @@ doctype html
 html
   head
     title= title
-
+    link(rel="stylesheet",href="/vendor/bootstrap/dist/css/bootstrap.min.css")
+    link(href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800")
+    link(href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic")
+    link(href="font-awesome/css/font-awesome.min.css")
+    link(href="css/animate.min.css")
+    link(href="css/creative.css")
     // Viewport mobile tag for sensible mobile support
     meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
 
     block styles
 
-  body
+  body#page-top
     block body
 
+    script(src="vendor/jquery/dist/jquery.min.js")
+    script(src="vendor/bootstrap/dist/js/bootstrap.min.js")
+    
     // The linker searches for this tag and adds js.  If there's no linker, we point to sails.io.js
+
     // SCRIPTS
     script(src="/js/dependencies/sails.io.js")
+    script(src="/js/cbpAnimatedHeader.js")
+    script(src="/js/classie.js")
+    script(src="/js/creative.js")
+    script(src="/js/jquery.easing.min.js")
+    script(src="/js/jquery.fittext.js")
+    script(src="/js/wow.min.js")
     // SCRIPTS END
 
